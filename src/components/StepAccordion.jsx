@@ -79,6 +79,9 @@ export default function StepAccordion({ step, role, isOpen, onToggle, onOpenTemp
                     {g.notes?.map((note) => (
                       <aside key={note.title} className={styles.note}>
                         <strong className={styles.noteTitle}>{note.title}</strong>
+                        {note.audienceNote && (
+                          <p className={styles.noteAudience}><GlossaryText>{note.audienceNote}</GlossaryText></p>
+                        )}
                         <p className={styles.noteBody}><GlossaryText>{note.body}</GlossaryText></p>
 
                         {note.items && (

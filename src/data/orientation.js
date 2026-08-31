@@ -309,6 +309,24 @@ export const orientation = {
         },
         { type: 'benefitsBoard' },
         { type: 'creativeBenefits' },
+        {
+          type: 'callout',
+          tone: 'note',
+          heading: 'See real CBAs',
+          body: 'Want to see what these benefit categories look like in an actual signed agreement? These databases collect real, executed CBAs and community benefit frameworks you can read in full.',
+          links: [
+            {
+              label: 'Database of Community Benefits Frameworks Across the US',
+              description: 'World Resources Institute — searchable database of community benefits frameworks and requirements across US states and localities.',
+              url: 'https://www.wri.org/data/database-community-benefits-frameworks-across-us',
+            },
+            {
+              label: 'Community Benefits Agreements Database',
+              description: 'Sabin Center for Climate Change Law, Columbia University — collection of executed CBAs for energy and infrastructure projects.',
+              url: 'https://climate.law.columbia.edu/content/community-benefits-agreements-database',
+            },
+          ],
+        },
       ],
     },
 

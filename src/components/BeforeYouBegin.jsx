@@ -38,6 +38,11 @@ function StateModal({ example, onClose }) {
           <span>What to watch for</span>
           <p><GlossaryText>{example.tradeoff}</GlossaryText></p>
         </div>
+        {example.url && (
+          <a className={styles.modalLink} href={example.url} target="_blank" rel="noopener noreferrer">
+            {example.urlLabel || 'Read the source'} <span aria-hidden="true">↗</span>
+          </a>
+        )}
       </div>
     </div>,
     document.body,
@@ -73,7 +78,7 @@ function LegalBox({ box }) {
         label="What to check before you start"
         openLabel="Hide the detail"
         count={box.fallback.items.length + box.research.items.length + box.outreach.items.length + box.checklist.items.length}
-        tone="quiet"
+        tone="prominent"
       >
       <div className={styles.subBlock}>
         <p className={styles.subHeading}>{box.fallback.heading}</p>
@@ -144,7 +149,7 @@ function ReviewBox({ box }) {
         label="See the diagrams"
         openLabel="Hide the diagrams"
         count={box.diagrams.length}
-        tone="quiet"
+        tone="prominent"
       >
       {box.diagrams.map((diagram) => {
         const Diagram = DIAGRAMS[diagram.id];

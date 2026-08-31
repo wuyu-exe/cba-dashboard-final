@@ -47,13 +47,13 @@ export function TimelineDiagram() {
 
       <line x1="132" y1="56" x2="700" y2="56" stroke={ENV} strokeWidth="2" />
       {[212, 364, 516, 668].map((x) => (
-        <line key={x} x1={x} y1="46" x2={x} y2="66" stroke={ENV} strokeWidth="2" />
+        <line key={x} x1={x} y1="49" x2={x} y2="63" stroke={ENV} strokeWidth="2" />
       ))}
 
-      <text x="150" y="42" fill={ENV} fontFamily="Archivo, Helvetica Neue, Arial, sans-serif" fontSize="11" fontWeight="600" letterSpacing="0.01em">
+      <text x="150" y="34" fill={ENV} fontFamily="Archivo, Helvetica Neue, Arial, sans-serif" fontSize="11" fontWeight="600" letterSpacing="0.01em">
         Screening &amp; assessments
       </text>
-      <text x="382" y="42" fill={ENV} fontFamily="Archivo, Helvetica Neue, Arial, sans-serif" fontSize="11" fontWeight="600" letterSpacing="0.01em">
+      <text x="382" y="34" fill={ENV} fontFamily="Archivo, Helvetica Neue, Arial, sans-serif" fontSize="11" fontWeight="600" letterSpacing="0.01em">
         Scoping · draft review · final EIS
       </text>
 
@@ -111,13 +111,13 @@ export function TimelineDiagram() {
       {/* emphasis band over the active negotiation window */}
       <rect x="364" y="321" width="152" height="10" rx="0" fill={CBA} opacity="0.18" />
 
-      <text x="228" y="313" fill={CBA} fontFamily="Archivo, Helvetica Neue, Arial, sans-serif" fontSize="11" fontWeight="600" letterSpacing="0.01em">
+      <text x="228" y="300" fill={CBA} fontFamily="Archivo, Helvetica Neue, Arial, sans-serif" fontSize="11" fontWeight="600" letterSpacing="0.01em">
         COALITION-BUILDING
       </text>
-      <text x="382" y="313" fill={CBA} fontFamily="Archivo, Helvetica Neue, Arial, sans-serif" fontSize="11" fontWeight="600" letterSpacing="0.01em">
+      <text x="382" y="300" fill={CBA} fontFamily="Archivo, Helvetica Neue, Arial, sans-serif" fontSize="11" fontWeight="600" letterSpacing="0.01em">
         COMMUNITY PRIORITIES
       </text>
-      <text x="228" y="356" fill={CBA} fontFamily="IBM Plex Sans, sans-serif" fontSize="11" fontStyle="italic">
+      <text x="228" y="364" fill={CBA} fontFamily="IBM Plex Sans, sans-serif" fontSize="11" fontStyle="italic">
         (or shift these earlier if possible)
       </text>
 
@@ -189,10 +189,10 @@ export function FeedbackLoopDiagram() {
         opacity="0.28"
       />
       <polygon
-        points="-10,-17 -10,17 20,0"
+        points="0,-19 0,19 34,0"
         fill={ENV}
-        opacity="0.42"
-        transform="translate(262 110) rotate(-20)"
+        opacity="0.9"
+        transform="translate(265.5 107.8) rotate(-20)"
       />
 
       {/* Right band: CBA negotiation flowing back down */}
@@ -204,10 +204,10 @@ export function FeedbackLoopDiagram() {
         opacity="0.28"
       />
       <polygon
-        points="-10,-17 -10,17 20,0"
+        points="0,-19 0,19 34,0"
         fill={CBA}
-        opacity="0.42"
-        transform="translate(358 350) rotate(160)"
+        opacity="0.9"
+        transform="translate(354.5 352.2) rotate(160)"
       />
 
       {/* Outer process labels */}

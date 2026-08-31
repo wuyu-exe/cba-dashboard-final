@@ -265,6 +265,8 @@ export const stateLawExamples = [
     body: "New York's Accelerated Renewable Energy Growth and Community Benefit Act requires developers of large-scale renewable energy facilities to provide host community benefits as a condition of state siting approval through the Office of Renewable Energy Siting.",
     tradeoff:
       "While this centralized process speeds up permitting, local governments can find the benefit formulas opaque and have limited influence over fund distribution.",
+    url: "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/Clean-Energy-Siting/accelerated-renewable-energy-growth-and-community-benefit-act-fact-sheet.pdf",
+    urlLabel: "Read the NYSERDA fact sheet",
   },
   {
     id: "ct",
@@ -273,6 +275,8 @@ export const stateLawExamples = [
     body: "Connecticut mandates CBAs for renewable energy projects over five megawatts, and projects above two megawatts must submit workforce plans with local hiring and apprenticeship goals.",
     tradeoff:
       "These rules promote equitable participation, but smaller towns may lack the resources or leverage to negotiate strong agreements and track enforcement.",
+    url: "https://www.cga.ct.gov/2023/rpt/pdf/2023-R-0148.pdf",
+    urlLabel: "Read the CGA research report",
   },
   {
     id: "me",
@@ -281,6 +285,8 @@ export const stateLawExamples = [
     body: "Offshore wind developers are required to provide a community benefits package worth at least $4,000 per turbine annually, with similar expectations for other renewables.",
     tradeoff:
       "The fixed payment model offers predictability but can overlook non-financial priorities like fisheries protection or coastal access improvements.",
+    url: "https://www.mainelegislature.org/legis/statutes/35-a/title35-Asec3407.html",
+    urlLabel: "Read 35-A M.R.S. §3407",
   },
   {
     id: "mi",
@@ -289,6 +295,8 @@ export const stateLawExamples = [
     body: "Under Public Act 233, large wind, solar, and storage projects can qualify for expedited state permitting if they include CBAs or comparable benefit commitments.",
     tradeoff:
       "The framework integrates community benefits into state review, but fast approvals could dilute local influence over agreement details.",
+    url: "https://www.legislature.mi.gov/documents/2023-2024/publicact/htm/2023-PA-0233.htm",
+    urlLabel: "Read Public Act 233 of 2023",
   },
   {
     id: "ca",
@@ -296,6 +304,8 @@ export const stateLawExamples = [
     summary: "Voluntary CBAs tied to a faster permitting pathway.",
     body: "AB 205 allows renewable developers to pursue faster permitting when they incorporate CBAs or other benefit mechanisms.",
     tradeoff: "Since participation is voluntary, outcomes are variable.",
+    url: "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB205",
+    urlLabel: "Read AB 205 (2022)",
   },
   {
     id: "de",
@@ -303,6 +313,8 @@ export const stateLawExamples = [
     summary: "Negotiated CBAs required as part of project approval.",
     body: "2024 siting rules require developers to negotiate CBAs or similar arrangements with host communities as part of project approval.",
     tradeoff: "This strengthens local input but exposes capacity gaps in smaller communities.",
+    url: "https://legis.delaware.gov/BillDetail/141232",
+    urlLabel: "Read the Delaware Energy Solutions Act (SB 265)",
   },
   {
     id: "md",
@@ -311,6 +323,8 @@ export const stateLawExamples = [
     body: "2024 legislation requires renewable developers to engage communities early and formalize benefits through CBAs.",
     tradeoff:
       "Implementation is still developing and could result in lasting improvements or just one-time payments.",
+    url: "https://iejusa.org/wp-content/uploads/2024/11/Community-Benefit-Agreement_11.6.24.pdf",
+    urlLabel: "Read the IEJ USA policy brief",
   },
 ];
 
@@ -619,12 +633,8 @@ export const steps = [
         notes: [
           {
             title: "Note on legal liability and SLAPP protections",
-            body: "Community members who participate in public meetings, comment processes, or CBA-related engagement are generally protected under state and federal free-speech laws when expressing views on matters of public concern. In the past, some developers have attempted to use SLAPP lawsuits (Strategic Lawsuits Against Public Participation) to intimidate or silence community activists. Many states now have anti-SLAPP statutes that allow courts to quickly dismiss these suits and, in some cases, require the developer to pay the defendant's legal fees.",
-            items: [
-              "The scope of these protections varies significantly by state — there is no single national standard.",
-              "CBAs themselves are legal contracts that may create obligations for the organizations or municipalities that sign them.",
-              "Individual residents typically do not incur personal liability simply for participating in engagement processes, offering input, or serving on advisory groups.",
-            ],
+            audienceNote: "This note is written for community advocates and residents — the audience this toolkit now speaks to directly, since it no longer varies its guidance by role. If you are a municipal official or developer using this toolkit, treat it as background on what the community members you work with should know.",
+            body: "Community members who participate in public meetings, comment processes, or CBA-related engagement are generally protected under state and federal free-speech laws when expressing views on matters of public concern. In the past, some developers have attempted to use SLAPP lawsuits (Strategic Lawsuits Against Public Participation) to intimidate or silence community activists. Many states now have anti-SLAPP statutes that allow courts to quickly dismiss these suits and, in some cases, require the developer to pay the defendant's legal fees. The scope of these protections varies by state, and CBAs themselves are legal contracts that may create obligations for the organizations or municipalities that sign them. Individual residents typically do not incur personal liability simply for participating in engagement processes, offering input, or serving on advisory groups. Still, communities should seek legal advice if they have concerns about potential exposure or if a developer threatens litigation.",
             caveat: "This is general information, not legal advice. Communities should seek advice from a licensed attorney in their state if they have concerns about potential exposure or if a developer threatens litigation.",
             example: {
               label: "Illustrative example — Massachusetts",
@@ -2151,6 +2161,15 @@ export const resources = [
   { id: "rl-e26", type: "external", title: "Massachusetts Anti-SLAPP Statute (c. 231 § 59H)", organization: "Massachusetts General Laws", topic: "Legal Protections", description: "The statute allowing defendants sued for exercising their right to petition to file a special motion to dismiss, with attorney's fees awarded if successful.", url: "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleII/Chapter231/Section59H" },
   { id: "rl-e27", type: "external", title: "State Anti-SLAPP Laws — Overview", organization: "Reporters Committee for Freedom of the Press", topic: "Legal Protections", description: "State-by-state guide to anti-SLAPP protections, useful for understanding what shields public participation in your jurisdiction.", url: "https://www.rcfp.org/resources/anti-slapp-legal-guide/" },
 
+  // State legal requirements (Comment #1)
+  { id: "rl-e28", type: "external", title: "New York: Accelerated Renewable Energy Growth and Community Benefit Act", organization: "NYSERDA", topic: "State Requirements", description: "Fact sheet on New York's host community benefit requirement, administered through the Office of Renewable Energy Siting.", url: "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/Clean-Energy-Siting/accelerated-renewable-energy-growth-and-community-benefit-act-fact-sheet.pdf" },
+  { id: "rl-e29", type: "external", title: "Connecticut: Renewable Energy Siting & Workforce Requirements", organization: "Connecticut General Assembly", topic: "State Requirements", description: "Research report summarizing Connecticut's CBA mandate for projects over 5 MW and workforce plan requirements over 2 MW.", url: "https://www.cga.ct.gov/2023/rpt/pdf/2023-R-0148.pdf" },
+  { id: "rl-e30", type: "external", title: "Maine: Offshore Wind Community Benefits Package (35-A M.R.S. §3407)", organization: "Maine Legislature", topic: "State Requirements", description: "Statute requiring offshore wind developers to provide a community benefits package worth at least $4,000 per turbine annually.", url: "https://www.mainelegislature.org/legis/statutes/35-a/title35-Asec3407.html" },
+  { id: "rl-e31", type: "external", title: "Michigan: Public Act 233 of 2023", organization: "Michigan Legislature", topic: "State Requirements", description: "State siting law allowing expedited permitting for large wind, solar, and storage projects that include CBAs or comparable benefit commitments.", url: "https://www.legislature.mi.gov/documents/2023-2024/publicact/htm/2023-PA-0233.htm" },
+  { id: "rl-e32", type: "external", title: "California: AB 205 (2022)", organization: "California Legislature", topic: "State Requirements", description: "Bill text allowing renewable developers to pursue faster permitting through the California Energy Commission when they enter into an enforceable community benefits agreement.", url: "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB205" },
+  { id: "rl-e33", type: "external", title: "Delaware: Energy Solutions Act of 2024 (SB 265)", organization: "Delaware General Assembly", topic: "State Requirements", description: "2024 siting legislation requiring developers to negotiate community benefit arrangements with host communities as part of project approval.", url: "https://legis.delaware.gov/BillDetail/141232" },
+  { id: "rl-e34", type: "external", title: "Maryland: Community Benefit Agreement Policy Brief", organization: "Initiative for Energy Justice", topic: "State Requirements", description: "Policy brief covering Maryland's 2024 requirement that renewable developers engage communities early and formalize benefits through CBAs.", url: "https://iejusa.org/wp-content/uploads/2024/11/Community-Benefit-Agreement_11.6.24.pdf" },
+
   // Case Studies
   { id: "rl-c1", type: "case-study", title: "Block Island Wind Farm CBA", location: "Rhode Island", sector: "Offshore Wind", outcome: "Successful enforcement", status: "coming-soon", description: "First U.S. offshore wind farm. CBA included reimbursement clause for infrastructure damage; developer paid cable repair costs without litigation." },
   { id: "rl-c2", type: "case-study", title: "Calverton Solar Energy Center", location: "New York", sector: "Solar", outcome: "Successful enforcement", status: "coming-soon", description: "CBA embedded in municipal approval process; town withheld certificate of occupancy until developer completed outstanding commitments." },
@@ -2172,11 +2191,14 @@ export const glossary = [
   { term: "Compensation", definition: "Payment for project impacts that cannot be fully avoided or mitigated. Compensation can include direct payments to affected landowners or residents, impact fees to the municipality, or community benefit funds tied to the scale and duration of project impacts." },
   { term: "Cumulative Impact Analysis (CIA)", definition: "An assessment of cumulative environmental and social burdens required for certain energy infrastructure projects under Massachusetts state law." },
   { term: "Developer", definition: "The company or entity proposing and constructing a project subject to community review or permitting." },
+  { term: "Development Agreement", definition: "A contract between a municipality and a developer, often required by state or local law, that sets binding conditions on a project — sometimes including community benefits — as part of its approval." },
   { term: "Dispute Resolution", definition: "The process for addressing non-compliance or disagreements, often through mediation or arbitration." },
   { term: "Engagement Plan", definition: "A document outlining how the community will be informed, consulted, and involved throughout the project." },
   { term: "Environmental Impact Assessment (EIA)", definition: "A study of a proposed project's likely environmental effects, required by most states before a new facility can be approved. Also called an Environmental Impact Report (EIR) or, at the federal level, an Environmental Impact Statement (EIS). It runs on a legally fixed schedule that does not adjust to CBA negotiations." },
   { term: "Environmental Justice (EJ) Principles", definition: "Principles ensuring meaningful involvement and equitable distribution of environmental benefits and burdens regardless of race, income, or other protected characteristics." },
+  { term: "Good-Neighbor Agreement", definition: "An informal or MOU-style agreement between a community and a developer used when a binding CBA is not required or contract enforceability is limited. It documents commitments and creates public accountability even without full legal force." },
   { term: "Host Community Agreement", definition: "A related contract between a municipality and developer outlining payments or benefits tied to project operation. In several states this is the legally required instrument even where it is not called a CBA." },
+  { term: "Impact Mitigation Agreement", definition: "A binding agreement, required by some states in place of or alongside a CBA, that commits a developer to specific mitigation measures for a project's impacts. It may limit or shape what a community can separately negotiate." },
   { term: "Impact Fee", definition: "A payment from a developer to a municipality to offset the public costs a project creates, such as road wear, emergency service demand, or infrastructure upgrades." },
   { term: "Intervenor Funding", definition: "Money made available — usually by a state program or through developer contributions — to help communities pay for the legal and technical expertise needed to participate meaningfully in siting or permitting proceedings." },
   { term: "Joint Fact-Finding", definition: "A collaborative process where all parties gather and verify project data together to reduce information gaps." },

@@ -334,6 +334,14 @@
 
 .noteBody { color: var(--slate); font-size: 13px; line-height: 1.68; }
 
+.noteAudience {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 11.5px;
+  font-style: italic;
+  line-height: 1.55;
+}
+
 .noteList { margin-top: 10px; padding-left: 17px; display: flex; flex-direction: column; gap: 6px; }
 .noteList li { color: var(--slate); font-size: 12.5px; line-height: 1.6; }
 .noteList li::marker { color: var(--step-color); }

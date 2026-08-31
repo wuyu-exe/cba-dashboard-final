@@ -77,6 +77,18 @@ function Callout({ block }) {
     <aside className={`${styles.callout} ${styles[block.tone] || ''}`}>
       <h3 className={styles.calloutHeading}>{block.heading}</h3>
       <p><GlossaryText>{block.body}</GlossaryText></p>
+      {block.links && (
+        <ul className={styles.calloutLinks}>
+          {block.links.map((link) => (
+            <li key={link.label}>
+              <a href={link.url} target="_blank" rel="noopener noreferrer">
+                {link.label} <span aria-hidden="true">↗</span>
+              </a>
+              {link.description && <span><GlossaryText>{link.description}</GlossaryText></span>}
+            </li>
+          ))}
+        </ul>
+      )}
       {block.source && <p className={styles.inlineSource}>{block.source}</p>}
     </aside>
   );

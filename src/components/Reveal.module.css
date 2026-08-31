@@ -41,6 +41,25 @@
 .quiet .toggle { background: transparent; }
 .quiet .toggle:hover { background: var(--white); }
 
+/* Prominent variant — a solid, higher-contrast toggle for dropdowns that were
+   getting missed (e.g. the "Before You Begin" boxes), instead of a quiet pill. */
+.prominent .toggle {
+  padding: 11px 18px 11px 14px;
+  border: 1.5px solid var(--box-color, var(--terra));
+  border-radius: 11px;
+  background: var(--box-color, var(--terra));
+  color: var(--white);
+  font-size: 14.5px;
+  font-weight: 700;
+}
+.prominent .toggle:hover {
+  background: color-mix(in srgb, var(--box-color, var(--terra)) 85%, black);
+  border-color: color-mix(in srgb, var(--box-color, var(--terra)) 85%, black);
+  color: var(--white);
+}
+.prominent .chevron { color: var(--white); }
+.prominent .count { background: rgba(255, 255, 255, .28); color: var(--white); }
+
 @keyframes revealIn {
   from { opacity: 0; transform: translateY(-4px); }
   to { opacity: 1; transform: none; }
