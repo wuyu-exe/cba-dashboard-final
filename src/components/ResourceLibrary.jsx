@@ -11,23 +11,34 @@ const TYPE_COLORS = { template: '#9580B8', external: '#6B9B7A', 'case-study': '#
 // 27 cards open at once was the single largest block of text on the page.
 const PREVIEW_COUNT = 6;
 
+const STATUS_LABELS = { available: 'Available', 'coming-soon': 'Coming Soon' };
+
 export default function ResourceLibrary({ onOpenTemplate }) {
   const [search, setSearch] = useState('');
   const [filterType, setFilterType] = useState('all');
   const [filterStep, setFilterStep] = useState('all');
+  const [filterStatus, setFilterStatus] = useState('all');
+  const [filterTopic, setFilterTopic] = useState('all');
   const [expandedGroups, setExpandedGroups] = useState({});
 
   const toggleGroup = (type) =>
     setExpandedGroups((prev) => ({ ...prev, [type]: !prev[type] }));
+
+  const topics = useMemo(
+    () => [...new Set(resources.filter((r) => r.type === 'external' && r.topic).map((r) => r.topic))].sort(),
+    [],
+  );
 
   const filtered = useMemo(() => resources.filter((r) => {
     const q = search.toLowerCase();
     return (
       (!q || r.title.toLowerCase().includes(q) || r.description?.toLowerCase().includes(q)) &&
       (filterType === 'all' || r.type === filterType) &&
-      (filterStep === 'all' || r.step === filterStep)
+      (filterStep === 'all' || r.step === filterStep) &&
+      (r.type !== 'case-study' || filterStatus === 'all' || (r.status || 'available') === filterStatus) &&
+      (r.type !== 'external' || filterTopic === 'all' || r.topic === filterTopic)
     );
-  }), [search, filterType, filterStep]);
+  }), [search, filterType, filterStep, filterStatus, filterTopic]);
 
   const byType = (type) => filtered.filter((r) => r.type === type);
 
@@ -98,6 +109,41 @@ export default function ResourceLibrary({ onOpenTemplate }) {
                 ))}
               </div>
             </div>
+
+            {(filterType === 'all' || filterType === 'external') && (
+              <div className={styles.filterGroup}>
+                <label className={styles.filterLabel}>Topic</label>
+                <div className={styles.filterBtns}>
+                  <button className={filterTopic === 'all' ? styles.filterActive : styles.filterBtn} onClick={() => setFilterTopic('all')}>All Topics</button>
+                  {topics.map((t) => (
+                    <button
+                      key={t}
+                      className={filterTopic === t ? styles.filterActive : styles.filterBtn}
+                      onClick={() => setFilterTopic(t)}
+                    >
+                      {t}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {(filterType === 'all' || filterType === 'case-study') && (
+              <div className={styles.filterGroup}>
+                <label className={styles.filterLabel}>Status</label>
+                <div className={styles.filterBtns}>
+                  {['all', 'available', 'coming-soon'].map((s) => (
+                    <button
+                      key={s}
+                      className={filterStatus === s ? styles.filterActive : styles.filterBtn}
+                      onClick={() => setFilterStatus(s)}
+                    >
+                      {s === 'all' ? 'All Statuses' : STATUS_LABELS[s]}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
@@ -172,7 +218,11 @@ export default function ResourceLibrary({ onOpenTemplate }) {
                 <div key={r.id} className={`${styles.card} ${styles.cardCaseStudy}`}>
                   <div className={styles.cardTop}>
                     <span className={styles.typeBadge} style={{ background: TYPE_COLORS['case-study'] }}>Case Study</span>
-                    <span className={styles.comingSoon}>Coming Soon</span>
+                    {r.status === 'coming-soon' ? (
+                      <span className={styles.comingSoon}>Coming Soon</span>
+                    ) : (
+                      r.step && <span className={styles.stepBadge} style={{ background: steps.find(s=>s.id===r.step)?.color || '#888' }}>{steps.find(s=>s.id===r.step)?.title}</span>
+                    )}
                   </div>
                   <h4 className={styles.cardTitle}>{r.title}</h4>
                   {r.location && <p className={styles.cardOrg}>{r.location} · {r.sector}</p>}

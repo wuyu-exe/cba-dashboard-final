@@ -49,6 +49,17 @@ export default function StepAccordion({ step, role, isOpen, onToggle, onOpenTemp
             </div>
           )}
 
+          {step.caseStudy && (
+            <aside className={styles.caseStudy} style={{ '--step-color': step.color }}>
+              <span className={styles.caseStudyLabel}>Case in point</span>
+              <strong className={styles.caseStudyTitle}>{step.caseStudy.title}</strong>
+              <p className={styles.caseStudyBody}><GlossaryText>{step.caseStudy.body}</GlossaryText></p>
+              <a className={styles.caseStudyLink} href="#resources">
+                See the full case study in the Resource Library <span aria-hidden="true">↓</span>
+              </a>
+            </aside>
+          )}
+
           <div className={styles.guidanceList}>
             {step.guidance.map((g, gi) => (
               <div key={gi} className={styles.guidanceItem}>

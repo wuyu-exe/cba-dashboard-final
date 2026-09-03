@@ -457,6 +457,11 @@ export const steps = [
     subtitle: "What communities and municipalities should do before any negotiation begins",
     description:
       "Strong CBAs begin before the negotiation table. This step helps you understand the project context, identify community priorities, assess your capacity, and decide whether to bring in outside support.",
+    caseStudy: {
+      title: "Hunter's Point Shipyard, San Francisco",
+      resourceId: "rl-c5",
+      body: "The Hunter's Point redevelopment underscores the importance of preparation, particularly assessing long-term capacity, before negotiations begin. When the coalition organization holding the community side of the agreement dissolved, the developer gained disproportionate influence and enforcement weakened — a cautionary example of what happens without early preparation for organizational stability.",
+    },
     guidance: [
       {
         title: "1. Understand the Project Context & What the Developer Needs",
@@ -677,6 +682,11 @@ export const steps = [
     subtitle: "How to build meaningful, inclusive, and effective community engagement before negotiations begin",
     description:
       "Engagement is not a checkbox — it is the foundation of a legitimate CBA. This step guides you through building continuous, inclusive, and documented community engagement that shapes the negotiation.",
+    caseStudy: {
+      title: "Block Island Wind Farm, Rhode Island",
+      resourceId: "rl-c1",
+      body: "Block Island demonstrates how ongoing, accessible engagement can make later enforcement run smoothly. The CBA established a full-time community liaison who maintained communication throughout development and into operations. Years later, when seabed erosion exposed the transmission cable, the developer honored the reimbursement clause without litigation — strong engagement had built the trust that made it a practical enforcement tool.",
+    },
     guidance: [
       {
         title: "1. Start Engagement Early and Make It Continuous",
@@ -815,6 +825,11 @@ export const steps = [
     subtitle: "Designing a fair, transparent, and enforceable negotiation process",
     description:
       "Good negotiation is structured, documented, and fair. This step provides timelines, facilitation guidance, power-dynamics tools, and a preparation worksheet to help all parties negotiate effectively.",
+    caseStudy: {
+      title: "Calverton Solar Energy Center, New York",
+      resourceId: "rl-c2",
+      body: "Calverton demonstrates that structuring negotiations within a formal municipal process can create durable leverage. By tying the CBA directly to planning approvals, the town ensured negotiated commitments were linked to regulatory milestones — so when the developer fell short, the certificate of occupancy was withheld until obligations were met.",
+    },
     guidance: [
       {
         title: "1. Sample Negotiation Timelines",
@@ -832,7 +847,7 @@ export const steps = [
             detail: [
               "Identify both short- and long-term mitigation measures for traffic, noise, and ecological impacts",
               "Identify compensation needs for short-term construction impacts and long-term operational impacts, and discuss potential valuation methods",
-              "Identify the expected costs of technical analysis, legal review, or facilitation needed to evaluate issues, using illustrative ranges based on similar projects",
+              "Identify the expected costs of technical analysis, legal review, or facilitation needed to evaluate issues. Illustrative ranges from comparable CBA processes (actual costs vary widely by project scale and region, and are not promises): independent legal review, roughly $5,000–$40,000+; technical or environmental consulting, roughly $10,000–$75,000+; professional facilitation, roughly $5,000–$25,000 per engagement; translation and accessibility support, roughly $1,000–$10,000",
             ],
           },
           {
@@ -1005,6 +1020,11 @@ export const steps = [
     subtitle: "Translate negotiated commitments into clear, enforceable, durable language",
     description:
       "A CBA is only as strong as its language. This step provides a structure template, model clauses, an example benefits menu, and a guide to the most common drafting mistakes.",
+    caseStudy: {
+      title: "Warm Springs/South Fremont, California",
+      resourceId: "rl-c8",
+      body: "This case shows how drafting failures can undermine otherwise strong community advocacy. The CBA clearly reflected community priorities for affordable housing and local hiring, but later amendments to the broader Community Plan were never formally tied back to the agreement — so when policy changed, key commitments lost their protection. Drafting must anticipate future amendments and build in durability.",
+    },
     guidance: [
       {
         title: "1. CBA Structure Template",
@@ -1244,6 +1264,11 @@ export const steps = [
     subtitle: "Ensure commitments are implemented, tracked, and publicly accountable",
     description:
       "A signed CBA is not the finish line — it is the beginning. This step establishes monitoring frameworks, committee structures, and reporting tools to ensure every commitment is tracked and enforced.",
+    caseStudy: {
+      title: "Salem Wind Terminal, Massachusetts",
+      resourceId: "rl-c9",
+      body: "The Salem Wind Terminal project established a seven-member working group with quarterly meetings and annual public reports, backed by dedicated staff and built-in continuity. That framework kept commitments tracked publicly and regularly, reducing the risk of drift or opacity — showing how formalized, recurring monitoring can sustain accountability over a project's full lifespan.",
+    },
     guidance: [
       {
         title: "1. Monitoring Frameworks",
@@ -1384,6 +1409,11 @@ export const steps = [
     subtitle: "Activate the tools that ensure commitments are delivered and know when to escalate",
     description:
       "Enforcement is the test of whether a CBA was real or just paper. This step walks through the enforcement pathway, real case examples of successful enforcement, and guidance on when and how to seek legal support.",
+    caseStudy: {
+      title: "NECEC Transmission Line, Maine",
+      resourceId: "rl-c4",
+      body: "NECEC demonstrates enforcement through structured, process-based mechanisms rather than litigation. Notice-and-cure provisions and regular reporting requirements endured through years of permitting disputes and legal challenges, so commitments persisted despite delays and political turnover — enforcement succeeded because accountability structures were designed for the long term.",
+    },
     guidance: [
       {
         title: "1. Enforcement Pathways",
@@ -2171,11 +2201,13 @@ export const resources = [
   { id: "rl-e34", type: "external", title: "Maryland: Community Benefit Agreement Policy Brief", organization: "Initiative for Energy Justice", topic: "State Requirements", description: "Policy brief covering Maryland's 2024 requirement that renewable developers engage communities early and formalize benefits through CBAs.", url: "https://iejusa.org/wp-content/uploads/2024/11/Community-Benefit-Agreement_11.6.24.pdf" },
 
   // Case Studies
-  { id: "rl-c1", type: "case-study", title: "Block Island Wind Farm CBA", location: "Rhode Island", sector: "Offshore Wind", outcome: "Successful enforcement", status: "coming-soon", description: "First U.S. offshore wind farm. CBA included reimbursement clause for infrastructure damage; developer paid cable repair costs without litigation." },
-  { id: "rl-c2", type: "case-study", title: "Calverton Solar Energy Center", location: "New York", sector: "Solar", outcome: "Successful enforcement", status: "coming-soon", description: "CBA embedded in municipal approval process; town withheld certificate of occupancy until developer completed outstanding commitments." },
+  { id: "rl-c5", type: "case-study", step: "prepare", title: "Hunter's Point Shipyard, San Francisco", location: "San Francisco, CA", sector: "Mixed-Use Development", outcome: "Enforcement failure", status: "available", description: "The Hunter's Point redevelopment underscores the importance of preparation, particularly assessing long-term capacity, before negotiations begin. Although the CBA included ambitious commitments and an implementation committee, the coalition did not fully assess its ability to sustain oversight of a multi-decade project. When SF ACORN dissolved, the committee lost its independence, and the developer gained disproportionate influence, weakening enforcement. The case shows that without early preparation for organizational stability and support needs, even well-negotiated commitments can unravel." },
+  { id: "rl-c1", type: "case-study", step: "engage", title: "Block Island Wind Farm, Rhode Island", location: "Rhode Island", sector: "Offshore Wind", outcome: "Successful enforcement", status: "available", description: "Block Island demonstrates how ongoing, accessible engagement can make later enforcement run smoothly. The CBA established a full-time community liaison who maintained communication throughout development and into operations. Years later, when seabed erosion exposed the transmission cable, the developer responded quickly and collaboratively, honoring the reimbursement clause without resorting to litigation. The case shows that strong engagement builds trust that serves as a practical enforcement tool." },
+  { id: "rl-c2", type: "case-study", step: "negotiate", title: "Calverton Solar Energy Center, New York", location: "New York", sector: "Solar", outcome: "Successful enforcement", status: "available", description: "Calverton demonstrates that structuring negotiations within a formal municipal process can create durable leverage. By tying the CBA directly to planning approvals, the town ensured that negotiated commitments were linked to regulatory milestones. When the developer failed to complete landscaping and make payments, the certificate of occupancy was withheld until obligations were met. The case shows that a well-designed negotiation process can embed enforcement power within the project's approval pathway." },
+  { id: "rl-c8", type: "case-study", step: "draft", title: "Warm Springs/South Fremont, California", location: "Fremont, CA", sector: "Mixed-Use Development", outcome: "Drafting failure", status: "available", description: "This case demonstrates how drafting failures can undermine otherwise strong community advocacy. The CBA clearly reflected community priorities for affordable housing and local hiring, but later amendments to the broader Community Plan were not formally tied back to the agreement. Because the CBA did not anticipate policy changes or require alignment, key commitments lost protection. The case shows that drafting must anticipate future amendments and build in durability." },
+  { id: "rl-c9", type: "case-study", step: "monitor", title: "Salem Wind Terminal, Massachusetts", location: "Salem, MA", sector: "Offshore Wind (Marshalling Terminal)", outcome: "Successful monitoring", status: "available", description: "The Salem Wind Terminal project established a seven-member working group with quarterly meetings and annual public reports, along with a robust monitoring structure staffed by dedicated personnel and ensuring continuity. This framework ensured that commitments were tracked publicly and regularly, reducing the risk of drift or opacity over time and illustrating how formalized, recurring monitoring can sustain accountability throughout a project's lifespan." },
+  { id: "rl-c4", type: "case-study", step: "enforce", title: "NECEC Transmission Line, Maine", location: "Maine", sector: "Transmission", outcome: "Successful enforcement", status: "available", description: "NECEC demonstrates enforcement through structured, process-based mechanisms rather than litigation. The agreement included notice-and-cure provisions and regular reporting requirements that endured through years of permitting disputes and legal challenges. These tools ensured that commitments persisted despite delays and political turnover, showing that enforcement can succeed when accountability structures are designed for long-term horizons." },
   { id: "rl-c3", type: "case-study", title: "Detroit Community Benefits Ordinance", location: "Michigan", sector: "Multiple", outcome: "Successful enforcement", status: "coming-soon", description: "City-level ordinance creating institutionalized enforcement; multiple projects corrected non-compliance after public reporting." },
-  { id: "rl-c4", type: "case-study", title: "NECEC Transmission Project", location: "Maine", sector: "Transmission", outcome: "Partial success", status: "coming-soon", description: "Third-party fund administration insulated benefit payments from project's legal and political challenges." },
-  { id: "rl-c5", type: "case-study", title: "Hunters Point Shipyard (Cautionary)", location: "San Francisco, CA", sector: "Mixed-Use Development", outcome: "Enforcement failure", status: "coming-soon", description: "Cautionary example: oversight collapsed after ACORN dissolved; enforcement weakened. Lesson: monitoring bodies must be durable and independent." },
   { id: "rl-c6", type: "case-study", title: "Offshore Wind CBAs in California", location: "California", sector: "Offshore Wind", outcome: "In Progress", status: "coming-soon", description: "Emerging case study on offshore wind CBA development in California waters. Content coming soon." },
   { id: "rl-c7", type: "case-study", title: "Aggie Square Development", location: "Sacramento, CA", sector: "Mixed-Use Development", outcome: "Cautionary", status: "coming-soon", description: "Case study on power imbalances in CBA negotiations. Content coming soon." },
 ];
@@ -2191,14 +2223,14 @@ export const glossary = [
   { term: "Compensation", definition: "Payment for project impacts that cannot be fully avoided or mitigated. Compensation can include direct payments to affected landowners or residents, impact fees to the municipality, or community benefit funds tied to the scale and duration of project impacts." },
   { term: "Cumulative Impact Analysis (CIA)", definition: "An assessment of cumulative environmental and social burdens required for certain energy infrastructure projects under Massachusetts state law." },
   { term: "Developer", definition: "The company or entity proposing and constructing a project subject to community review or permitting." },
-  { term: "Development Agreement", definition: "A contract between a municipality and a developer, often required by state or local law, that sets binding conditions on a project — sometimes including community benefits — as part of its approval." },
+  { term: "Development Agreement", definition: "A voluntary, legally binding contract between a property owner or developer and a local government or private partner that establishes the rules, permitted uses, and conditions for a construction project. It locks in current regulations to provide certainty for long-term or large-scale developments." },
   { term: "Dispute Resolution", definition: "The process for addressing non-compliance or disagreements, often through mediation or arbitration." },
   { term: "Engagement Plan", definition: "A document outlining how the community will be informed, consulted, and involved throughout the project." },
   { term: "Environmental Impact Assessment (EIA)", definition: "A study of a proposed project's likely environmental effects, required by most states before a new facility can be approved. Also called an Environmental Impact Report (EIR) or, at the federal level, an Environmental Impact Statement (EIS). It runs on a legally fixed schedule that does not adjust to CBA negotiations." },
   { term: "Environmental Justice (EJ) Principles", definition: "Principles ensuring meaningful involvement and equitable distribution of environmental benefits and burdens regardless of race, income, or other protected characteristics." },
   { term: "Good-Neighbor Agreement", definition: "An informal or MOU-style agreement between a community and a developer used when a binding CBA is not required or contract enforceability is limited. It documents commitments and creates public accountability even without full legal force." },
-  { term: "Host Community Agreement", definition: "A related contract between a municipality and developer outlining payments or benefits tied to project operation. In several states this is the legally required instrument even where it is not called a CBA." },
-  { term: "Impact Mitigation Agreement", definition: "A binding agreement, required by some states in place of or alongside a CBA, that commits a developer to specific mitigation measures for a project's impacts. It may limit or shape what a community can separately negotiate." },
+  { term: "Host Community Agreement", definition: "A legally binding contract signed directly between a local city or town government and a private business developer. It sets the rules for how a major local project will operate while protecting the town and giving local benefits. In several states this is the legally required instrument even where it is not called a CBA." },
+  { term: "Impact Mitigation Agreement", definition: "A binding contract that requires project developers to repair, restore, or compensate for environmental, agricultural, or community damage caused by construction. These agreements outline specific rules to reduce negative changes to local land and property." },
   { term: "Impact Fee", definition: "A payment from a developer to a municipality to offset the public costs a project creates, such as road wear, emergency service demand, or infrastructure upgrades." },
   { term: "Intervenor Funding", definition: "Money made available — usually by a state program or through developer contributions — to help communities pay for the legal and technical expertise needed to participate meaningfully in siting or permitting proceedings." },
   { term: "Joint Fact-Finding", definition: "A collaborative process where all parties gather and verify project data together to reduce information gaps." },

@@ -21,7 +21,7 @@ export function TimelineDiagram() {
 
   return (
     <svg
-      viewBox="0 0 900 400"
+      viewBox="0 0 980 400"
       xmlns="http://www.w3.org/2000/svg"
       role="img"
       aria-labelledby="timeline-diagram-title timeline-diagram-desc"
@@ -58,8 +58,8 @@ export function TimelineDiagram() {
       </text>
 
       {/* curve down to the consolidated permit box */}
-      <path d="M 700 56 Q 800 56 800 130" fill="none" stroke={ENV} strokeWidth="2" />
-      <path d="M 796 124 L 800 134 L 804 124 Z" fill={ENV} />
+      <path d="M 700 56 Q 880 56 880 130" fill="none" stroke={ENV} strokeWidth="2" />
+      <path d="M 876 124 L 880 134 L 884 124 Z" fill={ENV} />
 
       {/* ---------- Shared milestones ---------- */}
       {milestones.map((label, i) => {
@@ -121,8 +121,8 @@ export function TimelineDiagram() {
         (or shift these earlier if possible)
       </text>
 
-      <path d="M 700 326 Q 800 326 800 250" fill="none" stroke={CBA} strokeWidth="2" />
-      <path d="M 796 256 L 800 246 L 804 256 Z" fill={CBA} />
+      <path d="M 700 326 Q 880 326 880 250" fill="none" stroke={CBA} strokeWidth="2" />
+      <path d="M 876 256 L 880 246 L 884 256 Z" fill={CBA} />
 
       {/* ---------- Transition marker ---------- */}
       <line
@@ -137,7 +137,7 @@ export function TimelineDiagram() {
 
       {/* ---------- Convergence box ---------- */}
       <rect
-        x="716"
+        x="796"
         y="152"
         width="168"
         height="76"
@@ -146,10 +146,10 @@ export function TimelineDiagram() {
         stroke={INK}
         strokeWidth="1.5"
       />
-      <text x="800" y="182" fill={INK} fontFamily="Archivo, Helvetica Neue, Arial, sans-serif" fontSize="11.5" fontWeight="700" letterSpacing="0.01em" textAnchor="middle">
+      <text x="880" y="182" fill={INK} fontFamily="Archivo, Helvetica Neue, Arial, sans-serif" fontSize="11.5" fontWeight="700" letterSpacing="0.01em" textAnchor="middle">
         Consolidated permit
       </text>
-      <text x="800" y="200" fill={INK} fontFamily="Archivo, Helvetica Neue, Arial, sans-serif" fontSize="11.5" fontWeight="700" letterSpacing="0.01em" textAnchor="middle">
+      <text x="880" y="200" fill={INK} fontFamily="Archivo, Helvetica Neue, Arial, sans-serif" fontSize="11.5" fontWeight="700" letterSpacing="0.01em" textAnchor="middle">
         / final agreement
       </text>
     </svg>

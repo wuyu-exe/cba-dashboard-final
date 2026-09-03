@@ -159,6 +159,30 @@
 .templateBtn:hover,
 .inlineTemplateBtn:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
 
+.caseStudy {
+  margin-bottom: 22px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--step-color);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--step-color) 6%, var(--surface));
+}
+
+.caseStudyLabel {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--step-color);
+  font-family: var(--font-utility);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.caseStudyTitle { display: block; margin-bottom: 6px; color: var(--ink); font-size: 14.5px; font-weight: 700; }
+.caseStudyBody { margin-bottom: 8px; color: var(--slate); font-size: 13.5px; line-height: 1.65; }
+.caseStudyLink { color: var(--step-color); font-size: 12.5px; font-weight: 700; }
+.caseStudyLink:hover { text-decoration: underline; }
+
 .guidanceList {
   display: flex;
   flex-direction: column;
