@@ -34,7 +34,7 @@ export default function ResourceLibrary({ onOpenTemplate }) {
     return (
       (!q || r.title.toLowerCase().includes(q) || r.description?.toLowerCase().includes(q)) &&
       (filterType === 'all' || r.type === filterType) &&
-      (filterStep === 'all' || r.step === filterStep) &&
+      (r.type === 'external' || filterStep === 'all' || r.step === filterStep) &&
       (r.type !== 'case-study' || filterStatus === 'all' || (r.status || 'available') === filterStatus) &&
       (r.type !== 'external' || filterTopic === 'all' || r.topic === filterTopic)
     );
