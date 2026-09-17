@@ -1,10 +1,17 @@
 import { landingPage } from '../data/dashboardContent';
 import { orientation } from '../data/orientation';
 import offshoreWindVisit from '../assets/photos/offshore-wind-visit.jpg';
+import publicationCover from '../assets/photos/cba-enforceability-publication.jpg';
 import { IconArrowDown } from './Icons';
 import GlossaryText from './GlossaryText';
 import Reveal from './Reveal';
 import styles from './Hero.module.css';
+
+const SPOTLIGHT = {
+  title: 'From Promise to Practice: What Makes Community Benefits Agreements Enforceable?',
+  meta: 'Chun, Paul, Wheaton, Atkinson, Echarte & Susskind · MIT Renewable Energy Clinic',
+  url: 'https://renewable-energy.mit.edu/projects/-from-promise-to-practice%3A-what-makes-community-benefits-agreements-enforceable%3F',
+};
 
 export default function Hero({ onGlossaryOpen, onOpenOrientation }) {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -66,6 +73,18 @@ export default function Hero({ onGlossaryOpen, onOpenOrientation }) {
               <span className={styles.heroNoteLabel}>Choose your starting point</span>
               <p>Read the orientation for the background in one pass, or move directly into the working six-step process.</p>
             </aside>
+
+            <a className={styles.spotlight} href={SPOTLIGHT.url} target="_blank" rel="noreferrer">
+              <img className={styles.spotlightImage} src={publicationCover} alt="" loading="lazy" />
+              <span className={styles.spotlightBody}>
+                <span className={styles.heroNoteLabel}>Spotlight publication</span>
+                <span className={styles.spotlightTitle}>{SPOTLIGHT.title}</span>
+                <span className={styles.spotlightMeta}>{SPOTLIGHT.meta}</span>
+                <span className={styles.spotlightAction}>
+                  Read the publication <span aria-hidden="true">↗</span>
+                </span>
+              </span>
+            </a>
           </div>
         </div>
       </section>

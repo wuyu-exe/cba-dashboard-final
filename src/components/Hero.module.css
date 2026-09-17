@@ -205,7 +205,8 @@
 .orientationAction { margin-top: 12px; display: inline-flex; align-items: center; gap: 7px; color: var(--card-color); font-size: 12px; font-weight: 800; }
 
 @media (max-width: 900px) {
-  .heroNote { display: none; }
+  .heroNote,
+  .spotlight { display: none; }
   .missionInner { grid-template-columns: 1fr; gap: 22px; }
 }
 
@@ -233,7 +234,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .btnPrimary,
-  .btnSecondary { transition: none; }
+  .btnSecondary,
+  .spotlight { transition: none; }
 }
 
 /* Hero imagery (review comment #8: "add more diagrams or even photos when possible") */
@@ -257,3 +259,34 @@
   line-height: 1.55;
   font-style: italic;
 }
+
+/* Spotlight publication card in the hero side column */
+.spotlight {
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .17);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, .06);
+  color: rgba(255, 255, 255, .7);
+  text-decoration: none;
+  transition: transform .18s, border-color .18s, background .18s;
+}
+
+.spotlight:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, .34);
+  background: rgba(255, 255, 255, .1);
+}
+
+.spotlightImage {
+  display: block;
+  width: 100%;
+  height: 132px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, .14);
+}
+
+.spotlightBody { display: block; padding: 16px 18px 18px; }
+.spotlightTitle { display: block; color: #fff; font-family: var(--font-display); font-size: 15px; font-weight: 700; letter-spacing: -.01em; line-height: 1.32; }
+.spotlightMeta { display: block; margin-top: 8px; color: rgba(255, 255, 255, .6); font-size: 11.5px; line-height: 1.55; }
+.spotlightAction { margin-top: 13px; display: inline-flex; align-items: center; gap: 6px; color: #E8AEB8; font-size: 11px; font-weight: 800; }
