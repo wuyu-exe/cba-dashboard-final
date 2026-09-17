@@ -48,7 +48,7 @@
 }
 
 .brandDesc :global(button),
-.bibItem :global(button) { color: #A8B4E8; }
+.bibItem :global(button) { color: #6FC5EC; }
 
 .links { display: flex; gap: 56px; }
 .linkGroup { display: flex; flex-direction: column; gap: 9px; }
@@ -107,7 +107,7 @@
 
 .bibUrl {
   display: block;
-  color: #A8B4E8;
+  color: #6FC5EC;
   font-size: 10.5px;
   text-decoration: underline;
   text-underline-offset: 2px;

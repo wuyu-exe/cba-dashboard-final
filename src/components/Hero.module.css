@@ -60,7 +60,7 @@
 .heroKicker { display: block; margin-bottom: 18px; color: rgba(255, 255, 255, .65); font-family: var(--font-utility); font-size: 9px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
 .heroTitle { max-width: 720px; color: #fff; font-family: var(--font-display); font-size: clamp(43px, 6vw, 69px); font-weight: 700; letter-spacing: -.035em; line-height: 1; }
 .heroSubtitle { max-width: 640px; margin-top: 22px; color: rgba(255, 255, 255, .76); font-size: clamp(15px, 1.8vw, 17px); line-height: 1.68; }
-.heroSubtitle :global(button) { color: #A8B4E8; }
+.heroSubtitle :global(button) { color: #6FC5EC; }
 
 .heroActions { margin-top: 29px; display: flex; flex-wrap: wrap; gap: 10px; }
 .btnPrimary,
@@ -72,16 +72,6 @@
 
 .heroNote { flex: 1.3 1 0; min-width: 0; padding: 18px; border: 1px solid rgba(255, 255, 255, .17); border-radius: 15px; background: rgba(255, 255, 255, .06); color: rgba(255, 255, 255, .7); font-size: 12.5px; line-height: 1.65; }
 .heroNoteLabel { display: block; margin-bottom: 7px; color: #A8B4E8; font-family: var(--font-utility); font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-
-.heroTagline {
-  margin-top: 16px;
-  color: #A8B4E8;
-  font-family: var(--font-display);
-  font-size: clamp(18px, 2.4vw, 24px);
-  font-weight: 700;
-  letter-spacing: -.01em;
-  line-height: 1.3;
-}
 
 /* ---- Mission / philosophy block (Comment #9) ---- */
 .mission {

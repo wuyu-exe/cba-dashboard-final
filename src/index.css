@@ -30,8 +30,10 @@
   --band-sand: #FDEAD2;
   --band-green: #BADDC0;
 
-  --glossary-blue: #3D4DAD;
-  --glossary-blue-dark: #072382;
+  /* Deliberately a different hue from --terra: anything a reader can click
+     must not share a colour with static headings and labels. */
+  --glossary-blue: #0071AB;
+  --glossary-blue-dark: #00557F;
 
   --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;

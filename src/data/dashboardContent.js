@@ -13,7 +13,6 @@
 
 export const landingPage = {
   title: "Community Benefits Agreement Toolkit",
-  tagline: "Ensuring Shared Benefits, Not Burdens",
   subtitle:
     "A step-by-step toolkit to help communities, municipalities, and developers negotiate, draft, and enforce Community Benefits Agreements.",
 

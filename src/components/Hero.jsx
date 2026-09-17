@@ -44,7 +44,6 @@ export default function Hero({ onGlossaryOpen, onOpenOrientation }) {
               Community Benefits Agreement<br />
               Toolkit
             </h1>
-            <p className={styles.heroTagline}>{landingPage.tagline}</p>
             <p className={styles.heroSubtitle}>
               <GlossaryText>{landingPage.subtitle}</GlossaryText>
             </p>
