@@ -148,11 +148,11 @@
 
 .card:hover {
   transform: translateY(-2px);
-  border-color: rgba(201, 123, 84, .32);
+  border-color: rgba(61, 77, 173, .32);
   box-shadow: var(--shadow);
 }
 
-.cardCaseStudy { background: #FFFEFB; }
+.cardCaseStudy { background: #FFFFFF; }
 
 .cardTop {
   display: flex;
@@ -177,7 +177,7 @@
 .typeBadge,
 .stepBadge { color: #fff; }
 .topicBadge { background: var(--surface); color: var(--muted); }
-.comingSoon { background: #F4F0E4; color: #705A26; }
+.comingSoon { background: #FDEAD2; color: #9B590E; }
 
 .cardTitle {
   color: var(--ink);

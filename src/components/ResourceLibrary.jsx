@@ -5,7 +5,7 @@ import GlossaryText from './GlossaryText';
 import styles from './ResourceLibrary.module.css';
 
 const TYPE_LABELS = { template: 'Template', external: 'External Resource', 'case-study': 'Case Study' };
-const TYPE_COLORS = { template: '#9580B8', external: '#6B9B7A', 'case-study': '#C97B54' };
+const TYPE_COLORS = { template: '#727BB3', external: '#51985C', 'case-study': '#9B590E' };
 
 // Show a manageable first screenful per group; the rest is one click away.
 // 27 cards open at once was the single largest block of text on the page.

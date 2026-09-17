@@ -122,7 +122,7 @@ export const orientation = {
     {
       id: 'can-cannot',
       color: '#9B590E',
-      tint: '#FAF6EC',
+      tint: '#FDEAD2',
       number: '03',
       title: 'What the research shows',
       standfirst:
@@ -334,7 +334,7 @@ export const orientation = {
     {
       id: 'using',
       color: '#4E2D07',
-      tint: '#FBF1EF',
+      tint: '#FBEFE2',
       number: '06',
       title: 'Who this is for',
       standfirst: 'Written for community advocates, plus how to use the rest of the toolkit.',

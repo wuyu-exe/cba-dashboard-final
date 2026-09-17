@@ -426,7 +426,7 @@
 
 .checkLabel,
 .checkedLabel { color: var(--slate); font-size: 13px; line-height: 1.62; }
-.checkedLabel { color: #aaa097; text-decoration: line-through; }
+.checkedLabel { color: #9AA3C4; text-decoration: line-through; }
 
 @media (max-width: 680px) {
   .header { min-height: 76px; padding-right: 12px; }

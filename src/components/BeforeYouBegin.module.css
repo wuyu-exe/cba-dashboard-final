@@ -195,7 +195,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(61, 43, 31, .5);
+  background: rgba(4, 17, 65, .5);
   backdrop-filter: blur(3px);
 }
 

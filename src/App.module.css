@@ -53,9 +53,9 @@
   width: 270px;
   flex-shrink: 0;
   padding: 15px 17px;
-  border: 1px solid rgba(47, 92, 168, .2);
+  border: 1px solid rgba(61, 77, 173, .2);
   border-radius: 14px;
-  background: rgba(255, 254, 251, .72);
+  background: rgba(255, 255, 255, .72);
 }
 
 .glossaryHint > span {

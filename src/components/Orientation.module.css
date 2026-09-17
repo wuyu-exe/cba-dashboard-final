@@ -145,8 +145,8 @@
 }
 
 /* Sections the review wanted to feel distinct get their own tint. */
-.band_peach { background: var(--section-tint, #FFF9F7); }
-.band_sand { background: var(--section-tint, #FFFCF4); }
+.band_peach { background: var(--section-tint, #F4F6FC); }
+.band_sand { background: var(--section-tint, #F7F9FD); }
 .band_green { background: var(--section-tint, #F8FCF5); }
 
 .sectionHead {

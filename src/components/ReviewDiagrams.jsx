@@ -72,7 +72,7 @@ export function TimelineDiagram() {
                 y1="168"
                 x2={x - 10}
                 y2="212"
-                stroke="rgba(61,43,31,.28)"
+                stroke="rgba(4,17,65,.28)"
                 strokeWidth="1.5"
               />
             )}

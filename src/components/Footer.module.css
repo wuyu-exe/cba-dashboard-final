@@ -2,7 +2,7 @@
   padding: 52px 0 27px;
   border-top: 4px solid var(--terra);
   background: var(--banner);
-  color: #CFC0B4;
+  color: #C3CBE6;
 }
 
 .container {
@@ -31,7 +31,7 @@
 
 .brandSub,
 .linkGroupLabel {
-  color: #9D8878;
+  color: #8E99C4;
   font-family: var(--font-utility);
   font-size: 9px;
   font-weight: 700;
@@ -42,7 +42,7 @@
 .brandSub { display: block; margin-bottom: 13px; }
 
 .brandDesc {
-  color: #B8A79A;
+  color: #AAB4DA;
   font-size: 12.5px;
   line-height: 1.68;
 }
@@ -56,7 +56,7 @@
 
 .footerLink {
   padding: 0;
-  color: #CFC0B4;
+  color: #C3CBE6;
   font-size: 12.5px;
   text-align: left;
   transition: color .15s;
@@ -85,7 +85,7 @@
 
 .bibNote {
   margin-bottom: 17px;
-  color: #9D8878;
+  color: #8E99C4;
   font-size: 12px;
   line-height: 1.6;
 }
@@ -100,7 +100,7 @@
 }
 
 .bibItem {
-  color: #CFC0B4;
+  color: #C3CBE6;
   font-size: 11.5px;
   line-height: 1.65;
 }
@@ -121,7 +121,7 @@
   justify-content: space-between;
   gap: 10px;
   border-top: 1px solid rgba(255, 255, 255, .1);
-  color: #8F796B;
+  color: #7E8AB8;
   font-family: var(--font-utility);
   font-size: 9px;
 }
