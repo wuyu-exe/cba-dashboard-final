@@ -337,8 +337,8 @@ export const beforeYouBegin = {
     {
       id: "legal-requirements",
       number: "01",
-      color: "#A31F34",
-      tint: "#FFF4F4",
+      color: "#3D4DAD",
+      tint: "#F2F4FA",
       title: "Understand State & Local Legal Requirements Before You Begin",
       lead:
         "Before any CBA discussion begins, communities and municipalities must understand what state, county, and local laws require — and don't require.",
@@ -392,8 +392,8 @@ export const beforeYouBegin = {
     {
       id: "environmental-review",
       number: "02",
-      color: "#1D5E8C",
-      tint: "#EEF3F8",
+      color: "#072382",
+      tint: "#F2F4FA",
       title: "Environmental Review Happens on Its Own Timeline",
       lead:
         "Most states require an Environmental Impact Assessment (EIA) or Environmental Impact Report (EIR) for new facilities. Some projects also trigger federal NEPA review, which runs in parallel. These processes have legally fixed schedules that do not adjust to community needs or CBA negotiations.",
@@ -453,7 +453,7 @@ export const steps = [
     id: "prepare",
     number: 1,
     title: "Prepare",
-    color: "#A31F34", // step 1 — MIT red
+    color: "#3D4DAD", // step 1 — clinic indigo
     subtitle: "What communities and municipalities should do before any negotiation begins",
     description:
       "Strong CBAs begin before the negotiation table. This step helps you understand the project context, identify community priorities, assess your capacity, and decide whether to bring in outside support.",
@@ -678,7 +678,7 @@ export const steps = [
     id: "engage",
     number: 2,
     title: "Engage",
-    color: "#3D6B4A", // step 2 — green
+    color: "#36653D", // step 2 — clinic green
     subtitle: "How to build meaningful, inclusive, and effective community engagement before negotiations begin",
     description:
       "Engagement is not a checkbox — it is the foundation of a legitimate CBA. This step guides you through building continuous, inclusive, and documented community engagement that shapes the negotiation.",
@@ -821,7 +821,7 @@ export const steps = [
     id: "negotiate",
     number: 3,
     title: "Negotiate",
-    color: "#6B4E8C", // step 3 — violet
+    color: "#388585", // step 3 — clinic teal
     subtitle: "Designing a fair, transparent, and enforceable negotiation process",
     description:
       "Good negotiation is structured, documented, and fair. This step provides timelines, facilitation guidance, power-dynamics tools, and a preparation worksheet to help all parties negotiate effectively.",
@@ -1016,7 +1016,7 @@ export const steps = [
     id: "draft",
     number: 4,
     title: "Draft",
-    color: "#1D5E8C", // step 4 — blue
+    color: "#072382", // step 4 — clinic navy
     subtitle: "Translate negotiated commitments into clear, enforceable, durable language",
     description:
       "A CBA is only as strong as its language. This step provides a structure template, model clauses, an example benefits menu, and a guide to the most common drafting mistakes.",
@@ -1260,7 +1260,7 @@ export const steps = [
     id: "monitor",
     number: 5,
     title: "Monitor",
-    color: "#8A6A1F", // step 5 — ochre
+    color: "#9B590E", // step 5 — clinic ochre
     subtitle: "Ensure commitments are implemented, tracked, and publicly accountable",
     description:
       "A signed CBA is not the finish line — it is the beginning. This step establishes monitoring frameworks, committee structures, and reporting tools to ensure every commitment is tracked and enforced.",
@@ -1405,7 +1405,7 @@ export const steps = [
     id: "enforce",
     number: 6,
     title: "Enforce",
-    color: "#9E3B2E", // step 6 — rust
+    color: "#4E2D07", // step 6 — clinic espresso
     subtitle: "Activate the tools that ensure commitments are delivered and know when to escalate",
     description:
       "Enforcement is the test of whether a CBA was real or just paper. This step walks through the enforcement pathway, real case examples of successful enforcement, and guidance on when and how to seek legal support.",
@@ -2286,10 +2286,10 @@ export const bibliography = [
 // ---------- STEP COLOR MAP ----------
 
 export const stepColors = {
-  prepare: "#A31F34",
-  engage: "#3D6B4A",
-  negotiate: "#6B4E8C",
-  draft: "#1D5E8C",
-  monitor: "#8A6A1F",
-  enforce: "#9E3B2E",
+  prepare: "#3D4DAD",
+  engage: "#36653D",
+  negotiate: "#388585",
+  draft: "#072382",
+  monitor: "#9B590E",
+  enforce: "#4E2D07",
 };

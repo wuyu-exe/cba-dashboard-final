@@ -1,8 +1,8 @@
 // Professional redraws of the two hand-drawn EIA/CBA diagrams (Comment #2, #8).
 // Palette matches the toolkit: environmental review = blue, CBA = MIT red.
 
-const ENV = '#1D5E8C';
-const CBA = '#A31F34';
+const ENV = '#072382';
+const CBA = '#3D4DAD';
 const INK = '#0F0F0F';
 const MUTED = '#727272';
 

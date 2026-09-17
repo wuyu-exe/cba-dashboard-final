@@ -29,8 +29,8 @@ export const orientation = {
     {
       id: 'fairness',
       photo: { src: communityMeeting, alt: 'Residents, officials, and a project team seated together at a facilitated community meeting.', caption: 'Engagement works when it happens early enough that the answers can still change.' },
-      color: '#A31F34',
-      tint: '#FFF4F4',
+      color: '#3D4DAD',
+      tint: '#F2F4FA',
       number: '01',
       title: 'Where we stand',
       standfirst:
@@ -74,8 +74,8 @@ export const orientation = {
     // ---------------------------------------------------------
     {
       id: 'what-is',
-      color: '#1D5E8C',
-      tint: '#EEF3F8',
+      color: '#072382',
+      tint: '#F2F4FA',
       number: '02',
       title: 'What a CBA is',
       standfirst:
@@ -121,7 +121,7 @@ export const orientation = {
     // ---------------------------------------------------------
     {
       id: 'can-cannot',
-      color: '#8A6A1F',
+      color: '#9B590E',
       tint: '#FAF6EC',
       number: '03',
       title: 'What the research shows',
@@ -207,7 +207,7 @@ export const orientation = {
     {
       id: 'why',
       photo: { src: prioritiesWorkshop, alt: 'Participants working over a shared map and materials at a community priorities workshop.', caption: 'Setting priorities together, before the negotiation, is what Step 1 of this toolkit is for.' },
-      color: '#3D6B4A',
+      color: '#36653D',
       tint: '#EEF4EF',
       number: '04',
       title: 'Why communities want one',
@@ -282,7 +282,7 @@ export const orientation = {
     {
       id: 'benefits',
       photo: { src: solarInstall, alt: 'A worker fastening panels during a rooftop solar installation.', caption: 'Local hiring and apprenticeship pipelines turn construction work into durable local careers.' },
-      color: '#6B4E8C',
+      color: '#388585',
       tint: '#F3F0F7',
       number: '05',
       title: 'What goes in an agreement',
@@ -333,7 +333,7 @@ export const orientation = {
     // ---------------------------------------------------------
     {
       id: 'using',
-      color: '#9E3B2E',
+      color: '#4E2D07',
       tint: '#FBF1EF',
       number: '06',
       title: 'Who this is for',

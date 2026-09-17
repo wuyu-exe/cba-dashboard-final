@@ -1,7 +1,7 @@
 .footer {
   padding: 52px 0 27px;
   border-top: 4px solid var(--terra);
-  background: var(--ink);
+  background: var(--banner);
   color: #CFC0B4;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .brandDesc :global(button),
-.bibItem :global(button) { color: #9AB5E1; }
+.bibItem :global(button) { color: #A8B4E8; }
 
 .links { display: flex; gap: 56px; }
 .linkGroup { display: flex; flex-direction: column; gap: 9px; }
@@ -107,7 +107,7 @@
 
 .bibUrl {
   display: block;
-  color: #9AB5E1;
+  color: #A8B4E8;
   font-size: 10.5px;
   text-decoration: underline;
   text-underline-offset: 2px;
