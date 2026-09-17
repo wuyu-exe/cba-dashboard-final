@@ -26,11 +26,6 @@ export default function Footer({ onGlossaryOpen }) {
                 Bibliography & Acknowledgments {bibOpen ? '▲' : '▼'}
               </button>
             </div>
-            <div className={styles.linkGroup}>
-              <span className={styles.linkGroupLabel}>Support</span>
-              <button className={styles.footerLink} onClick={() => alert('Help documentation coming soon.')}>Help</button>
-              <button className={styles.footerLink} onClick={() => alert('Feedback form coming soon.')}>Feedback</button>
-            </div>
           </div>
         </div>
 
@@ -61,8 +56,7 @@ export default function Footer({ onGlossaryOpen }) {
         )}
 
         <div className={styles.bottomRow}>
-          <span className={styles.copyright}>© 2025 MIT Renewable Energy Clinic · CBA Toolkit. Not legal advice.</span>
-          <span className={styles.version}>v0.1 — Design review prototype</span>
+          <span className={styles.copyright}>© 2026 MIT Renewable Energy Clinic · CBA Toolkit. Not legal advice.</span>
         </div>
       </div>
     </footer>
