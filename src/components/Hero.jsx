@@ -9,6 +9,7 @@ import styles from './Hero.module.css';
 
 const SPOTLIGHT = {
   title: 'From Promise to Practice: What Makes Community Benefits Agreements Enforceable?',
+  shortTitle: 'What Makes CBAs Enforceable?',
   meta: 'Chun, Paul, Wheaton, Atkinson, Echarte & Susskind · MIT Renewable Energy Clinic',
   url: 'https://renewable-energy.mit.edu/projects/-from-promise-to-practice%3A-what-makes-community-benefits-agreements-enforceable%3F',
 };
@@ -69,22 +70,29 @@ export default function Hero({ onGlossaryOpen, onOpenOrientation }) {
                 agreements examined in the Resource Library.
               </figcaption>
             </figure>
-            <aside className={styles.heroNote}>
-              <span className={styles.heroNoteLabel}>Choose your starting point</span>
-              <p>Read the orientation for the background in one pass, or move directly into the working six-step process.</p>
-            </aside>
+            <div className={styles.heroSideRow}>
+              <aside className={styles.heroNote}>
+                <span className={styles.heroNoteLabel}>Choose your starting point</span>
+                <p>Read the orientation for the background in one pass, or move directly into the working six-step process.</p>
+              </aside>
 
-            <a className={styles.spotlight} href={SPOTLIGHT.url} target="_blank" rel="noreferrer">
-              <img className={styles.spotlightImage} src={publicationCover} alt="" loading="lazy" />
-              <span className={styles.spotlightBody}>
-                <span className={styles.heroNoteLabel}>Spotlight publication</span>
-                <span className={styles.spotlightTitle}>{SPOTLIGHT.title}</span>
-                <span className={styles.spotlightMeta}>{SPOTLIGHT.meta}</span>
-                <span className={styles.spotlightAction}>
-                  Read the publication <span aria-hidden="true">↗</span>
+              <a
+                className={styles.spotlight}
+                href={SPOTLIGHT.url}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Spotlight publication: ${SPOTLIGHT.title}`}
+              >
+                <img className={styles.spotlightImage} src={publicationCover} alt="" loading="lazy" />
+                <span className={styles.spotlightBody}>
+                  <span className={styles.heroNoteLabel}>Spotlight</span>
+                  <span className={styles.spotlightTitle}>{SPOTLIGHT.shortTitle}</span>
+                  <span className={styles.spotlightAction}>
+                    Read it <span aria-hidden="true">↗</span>
+                  </span>
                 </span>
-              </span>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </section>
