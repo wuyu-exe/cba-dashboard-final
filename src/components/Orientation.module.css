@@ -19,6 +19,9 @@
   border-bottom: 1px solid var(--border);
 }
 
+/* Without the brand lockup the bar is links only, so left-align them. */
+.navbarEmbedded { justify-content: flex-start; padding-block: 9px; }
+
 .brand { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
 .brandName { font-family: var(--font-display); font-weight: 800; font-size: 16px; letter-spacing: -.01em; }
 .brandSub { color: var(--muted); font-size: 11px; }

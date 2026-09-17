@@ -2,7 +2,7 @@
   padding: 64px 0 70px;
   border-top: 1px solid var(--border);
   background: var(--paper);
-  scroll-margin-top: 64px;
+  scroll-margin-top: var(--scroll-offset);
 }
 
 .container { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
@@ -274,7 +274,7 @@
 }
 
 @media (max-width: 680px) {
-  .section { padding: 48px 0 54px; scroll-margin-top: 58px; }
+  .section { padding: 48px 0 54px; scroll-margin-top: var(--scroll-offset); }
   .container { width: min(100% - 30px, 1160px); }
   .box { padding: 24px 20px 26px; }
   .stateGrid { grid-template-columns: 1fr; }

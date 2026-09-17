@@ -211,7 +211,7 @@ function Block({ block }) {
   return <Component block={block} />;
 }
 
-export default function Orientation({ initialSection, onBack, onGlossaryOpen, onGoToSteps, onGoToResources }) {
+export default function Orientation({ embed = false, initialSection, onBack, onGlossaryOpen, onGoToSteps, onGoToResources }) {
   const [activeSection, setActiveSection] = useState(orientation.sections[0].id);
 
   useEffect(() => {
@@ -250,11 +250,15 @@ export default function Orientation({ initialSection, onBack, onGlossaryOpen, on
 
   return (
     <div className={styles.page}>
-      <nav className={styles.navbar} aria-label="Orientation navigation">
-        <button type="button" className={styles.brand} onClick={onBack}>
-          <span className={styles.brandName}>CBA Toolkit</span>
-          <span className={styles.brandSub}>MIT Renewable Energy Clinic</span>
-        </button>
+      <nav className={`${styles.navbar} ${embed ? styles.navbarEmbedded : ''}`} aria-label="Orientation navigation">
+        {/* Embedded, the host header already carries this branding. The links
+            stay: they are how a reader gets back out of the orientation. */}
+        {!embed && (
+          <button type="button" className={styles.brand} onClick={onBack}>
+            <span className={styles.brandName}>CBA Toolkit</span>
+            <span className={styles.brandSub}>MIT Renewable Energy Clinic</span>
+          </button>
+        )}
         <div className={styles.navActions}>
           <button type="button" onClick={onBack}>Home</button>
           <button type="button" onClick={onGoToSteps}>Six steps</button>

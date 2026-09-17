@@ -1,4 +1,5 @@
-.hero { background: var(--paper); }
+.hero,
+.heroBody { background: var(--paper); }
 
 .navbar {
   position: sticky;
@@ -148,7 +149,7 @@
 }
 
 .content { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
-.directory { padding: 62px 0 54px; scroll-margin-top: 64px; }
+.directory { padding: 62px 0 54px; scroll-margin-top: var(--scroll-offset); }
 .sectionIntro { max-width: 760px; margin-bottom: 26px; }
 .sectionLabel { margin-bottom: 9px; color: var(--terra); font-family: var(--font-utility); font-size: 9px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
 .sectionHeading { color: var(--ink); font-family: var(--font-display); font-size: clamp(30px, 4.5vw, 43px); font-weight: 700; letter-spacing: -.025em; line-height: 1.14; }
@@ -210,7 +211,7 @@
   .heroBannerInner { width: min(100% - 34px, 1160px); padding: 54px 0; }
   .heroTitle { font-size: clamp(39px, 12vw, 53px); }
   .content { width: min(100% - 30px, 1160px); }
-  .directory { padding: 48px 0 43px; scroll-margin-top: 58px; }
+  .directory { padding: 48px 0 43px; scroll-margin-top: var(--scroll-offset); }
   .orientationRow { gap: 14px; padding: 20px 0; }
   .orientationNumber { width: 34px; font-size: 17px; }
 }
@@ -282,3 +283,58 @@
 .spotlightBody { flex: 1; display: flex; flex-direction: column; padding: 13px 14px 14px; }
 .spotlightTitle { display: block; color: #fff; font-family: var(--font-display); font-size: 12.5px; font-weight: 700; letter-spacing: -.005em; line-height: 1.34; }
 .spotlightAction { margin-top: auto; padding-top: 10px; display: inline-flex; align-items: center; gap: 6px; color: #A8B4E8; font-size: 10px; font-weight: 800; }
+
+/* ---------- embedded in the clinic's own site ----------
+   No navbar of ours, a shorter banner so the toolkit reads as a section of the
+   host page rather than a second homepage, and the section links as a slim
+   sticky bar under the banner. */
+
+:global(html[data-embed]) .heroBanner,
+:global(html[data-embed]) .heroBannerInner { min-height: 0; }
+
+/* The full-height banner bottom-aligns its copy; at this height that would
+   leave a void above the title, so centre the two columns instead. */
+:global(html[data-embed]) .heroBannerInner { align-items: center; padding: 44px 0 40px; }
+:global(html[data-embed]) .heroTitle { font-size: clamp(32px, 4vw, 46px); }
+:global(html[data-embed]) .heroSubtitle { margin-top: 16px; font-size: clamp(14px, 1.5vw, 15.5px); }
+:global(html[data-embed]) .heroActions { margin-top: 22px; }
+:global(html[data-embed]) .heroFigure img { height: clamp(150px, 17vw, 196px); }
+:global(html[data-embed]) .directory { padding-top: 46px; }
+
+.sectionNav {
+  position: sticky;
+  top: 0;
+  z-index: 300;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(12px);
+}
+
+.sectionNavInner {
+  width: min(1160px, calc(100% - 48px));
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+  padding: 7px 0;
+}
+
+.sectionNavLink {
+  padding: 8px 12px;
+  border-radius: 9px;
+  color: var(--muted);
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.sectionNavLink:hover { background: var(--paper-deep); color: var(--terra); }
+
+/* scroll targets clear the section bar instead of the (absent) navbar */
+
+@media (max-width: 700px) {
+  .sectionNavInner { width: min(100% - 30px, 1160px); gap: 0; }
+  .sectionNavLink { padding: 7px 8px; font-size: 11px; }
+  :global(html[data-embed]) .heroBannerInner { padding: 34px 0 30px; }
+  :global(html[data-embed]) .heroTitle { font-size: clamp(28px, 8vw, 38px); }
+}

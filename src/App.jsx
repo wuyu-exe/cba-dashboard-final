@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Hero from './components/Hero';
 import BeforeYouBegin from './components/BeforeYouBegin';
 import StepAccordion from './components/StepAccordion';
@@ -9,6 +9,7 @@ import TemplateModal from './components/TemplateModal';
 import GlossaryText, { GlossaryLinkScope } from './components/GlossaryText';
 import Orientation from './components/Orientation';
 import { steps } from './data/dashboardContent';
+import { isEmbed, reportHeight } from './embed';
 import styles from './App.module.css';
 
 // The review asked us to drop Municipal/Developer role personalization and write for a
@@ -16,6 +17,8 @@ import styles from './App.module.css';
 const ROLE = 'community';
 
 export default function App() {
+  useEffect(reportHeight, []);
+
   const [glossaryOpen, setGlossaryOpen] = useState(false);
   const [activeTemplate, setActiveTemplate] = useState(null);
   const [openStep, setOpenStep] = useState(null);
@@ -49,6 +52,7 @@ export default function App() {
       {showOrientation ? (
         <GlossaryLinkScope scopeKey="orientation">
           <Orientation
+            embed={isEmbed}
             initialSection={orientationSection}
             onBack={returnToToolkit}
             onGlossaryOpen={() => setGlossaryOpen(true)}
@@ -58,7 +62,7 @@ export default function App() {
         </GlossaryLinkScope>
       ) : (
         <GlossaryLinkScope scopeKey="landing">
-          <Hero onGlossaryOpen={() => setGlossaryOpen(true)} onOpenOrientation={openOrientation} />
+          <Hero embed={isEmbed} onGlossaryOpen={() => setGlossaryOpen(true)} onOpenOrientation={openOrientation} />
 
           <BeforeYouBegin />
 
@@ -76,7 +80,7 @@ export default function App() {
                   <span>Glossary</span>
                   {/* Don't name a term here — it may already be linked further up the
                       page, and each term is only linked once per page. */}
-                  <p>Terms shown in blue open a definition. Each one is linked the first time it appears on a page; the full glossary is in the top bar.</p>
+                  <p>Terms shown in blue open a definition. Each one is linked the first time it appears on a page; the full glossary opens from the section links.</p>
                 </aside>
               </div>
 

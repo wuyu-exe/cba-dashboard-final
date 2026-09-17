@@ -7,7 +7,7 @@
   padding: 70px 0 76px;
   border-top: 1px solid var(--border);
   background: var(--paper-deep);
-  scroll-margin-top: 64px;
+  scroll-margin-top: var(--scroll-offset);
 }
 
 .container {
@@ -143,7 +143,7 @@
 }
 
 @media (max-width: 680px) {
-  .stepsSection { padding: 52px 0 58px; scroll-margin-top: 58px; }
+  .stepsSection { padding: 52px 0 58px; scroll-margin-top: var(--scroll-offset); }
   .container { width: min(100% - 30px, 1160px); }
   .sectionHeading { font-size: 34px; }
 }

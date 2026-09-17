@@ -14,32 +14,41 @@ const SPOTLIGHT = {
   url: 'https://renewable-energy.mit.edu/projects/-from-promise-to-practice%3A-what-makes-community-benefits-agreements-enforceable%3F',
 };
 
-export default function Hero({ onGlossaryOpen, onOpenOrientation }) {
+export default function Hero({ embed = false, onGlossaryOpen, onOpenOrientation }) {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <header className={styles.hero} id="home">
-      <nav className={styles.navbar} aria-label="Primary navigation">
-        <button className={styles.navBrand} type="button" onClick={() => scrollTo('home')}>
-          <span className={styles.navMark}>CBA</span>
-          <span className={styles.navBrandText}>
-            <span className={styles.navLogo}>CBA Toolkit</span>
-            <span className={styles.navLogoSub}>MIT Renewable Energy Clinic</span>
-          </span>
-        </button>
-        <div className={styles.navLinks}>
-          <button className={styles.navLink} onClick={onOpenOrientation}>Orientation</button>
-          <button className={styles.navLink} onClick={() => scrollTo('before-you-begin')}>Before you begin</button>
-          <button className={styles.navLink} onClick={() => scrollTo('steps')}>Six steps</button>
-          <button className={styles.navLink} onClick={() => scrollTo('resources')}>Resources</button>
-          <button className={styles.navLink} onClick={onGlossaryOpen}>Glossary</button>
-        </div>
-      </nav>
+    <>
+      <header className={styles.hero} id="home">
+      {/* Embedded, the host page supplies the header, branding and global nav, so
+          we drop ours: two site navs stacked leave a reader unable to tell which
+          one governs what. The same links return below the banner as section
+          navigation, where they read as page furniture. */}
+      {!embed && (
+        <nav className={styles.navbar} aria-label="Primary navigation">
+          <button className={styles.navBrand} type="button" onClick={() => scrollTo('home')}>
+            <span className={styles.navMark}>CBA</span>
+            <span className={styles.navBrandText}>
+              <span className={styles.navLogo}>CBA Toolkit</span>
+              <span className={styles.navLogoSub}>MIT Renewable Energy Clinic</span>
+            </span>
+          </button>
+          <div className={styles.navLinks}>
+            <button className={styles.navLink} onClick={onOpenOrientation}>Orientation</button>
+            <button className={styles.navLink} onClick={() => scrollTo('before-you-begin')}>Before you begin</button>
+            <button className={styles.navLink} onClick={() => scrollTo('steps')}>Six steps</button>
+            <button className={styles.navLink} onClick={() => scrollTo('resources')}>Resources</button>
+            <button className={styles.navLink} onClick={onGlossaryOpen}>Glossary</button>
+          </div>
+        </nav>
+      )}
 
       <section className={styles.heroBanner} aria-labelledby="page-title">
         <div className={styles.heroBannerInner}>
           <div className={styles.heroCopy}>
-            <span className={styles.heroKicker}>MIT Renewable Energy Clinic · Community development toolkit</span>
+            <span className={styles.heroKicker}>
+              {embed ? 'Community development toolkit' : 'MIT Renewable Energy Clinic · Community development toolkit'}
+            </span>
             <h1 className={styles.heroTitle} id="page-title">
               Community Benefits Agreement<br />
               Toolkit
@@ -94,9 +103,23 @@ export default function Hero({ onGlossaryOpen, onOpenOrientation }) {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </header>
 
-      <section className={styles.mission} aria-labelledby="mission-heading">
+      {embed && (
+        <nav className={styles.sectionNav} aria-label="Toolkit sections">
+          <div className={styles.sectionNavInner}>
+            <button className={styles.sectionNavLink} onClick={onOpenOrientation}>Orientation</button>
+            <button className={styles.sectionNavLink} onClick={() => scrollTo('before-you-begin')}>Before you begin</button>
+            <button className={styles.sectionNavLink} onClick={() => scrollTo('steps')}>Six steps</button>
+            <button className={styles.sectionNavLink} onClick={() => scrollTo('resources')}>Resources</button>
+            <button className={styles.sectionNavLink} onClick={onGlossaryOpen}>Glossary</button>
+          </div>
+        </nav>
+      )}
+
+      <div className={styles.heroBody}>
+        <section className={styles.mission} aria-labelledby="mission-heading">
         <div className={styles.missionInner}>
           <div className={styles.missionIntro}>
             <p className={styles.missionLabel}>{landingPage.mission.label}</p>
@@ -168,7 +191,8 @@ export default function Hero({ onGlossaryOpen, onOpenOrientation }) {
             ))}
           </ol>
         </section>
+        </div>
       </div>
-    </header>
+    </>
   );
 }
